@@ -2,25 +2,22 @@
 <html>
 
 <head>
-    <title>This is the title.</title>
-    <h1>This is the header.</h1>
+    <div style="border: 2px solid #000;">
+        <h1>This is the header.</h1>
+    </div>
 </head>
 
 <body>
-    <h1>This is the body.</h1>
-    <!-- <style type="text/css">
-        .main{
-            min-height: 100vh;
-            height: 100%;
-        }
-    </style> -->
-    <div class="main">
-        {% block content %}
 
-        {% endblock content %}
-    </div>
+    {% block content %}
+
+    {% endblock content %}
+
 </body>
 <footer>
-    <h3>This is the footer.</h3>
+    <div style="border: 2px solid #000;">
+        <h2>This is the footer.</h2>
+    </div>
 </footer>
+
 </html>

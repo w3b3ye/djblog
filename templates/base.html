@@ -7,8 +7,9 @@
     {% if request.user.is_authenticated %}
         <p>Hello, {{request.user.username}} | <a href="{% url 'logout' %}">Logout</a></p>
     {% else %}
-
+        <p><a href="{% url 'register' %}">Register</a> | <a href=#>Login</a></p>
     {% endif %}
+    <hr>
     
 </head>
 
@@ -20,8 +21,8 @@
 
 </body>
 <footer>
-   
-        <h2>This is the footer.</h2>
+        <hr>
+        <p>CWM - A Django Blog</p>
     
 </footer>
 
